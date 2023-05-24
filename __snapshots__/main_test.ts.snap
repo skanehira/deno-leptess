@@ -1,0 +1,14 @@
+export const snapshot = {};
+
+snapshot[`read text from image 1`] = `
+"最近Wasmの勢いがすごくて、ブラウザでPostgreSQLを動かせたり、DockerでWasmを動かせたり
+できます。
+
+以前からWasm自体に興味があって、動作原理を知りたいと思って chibiwasm というRuntimeを実
+装してみました。
+
+Rustを選んだのは、最近Rustを勉強していてそれに慣れるためです。
+
+苦労しましたが、 *.wasm がどのようにして実行されるのかを理解できたので良かったです。
+"
+`;

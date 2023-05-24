@@ -1,9 +1,9 @@
-import { pix_read } from "./mod.ts";
+import { pix_read } from "./bindings/bindings.ts";
 
-const file = await Deno.open("./fixtures/jpn.png");
-try {
-  const text = await pix_read("jpn", file);
+async function main() {
+  const file = await Deno.readFile("./fixtures/test.png");
+  const text = pix_read("jpn", file);
   console.log(text);
-} catch (_) {
-  file.close();
 }
+
+await main();
